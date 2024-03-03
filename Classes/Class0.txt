@@ -1,0 +1,2 @@
+O GitHub é visto como se fosse uma ferramenta para programadores. Como um grupo onde você pode guardar seus códigos,criar projetos com outras pessoas e avalia-los.
+O Git é uma rede social para engenheiros de software onde outras pessoas podem alterar seus códigos avalia-los e consertar erros.
