@@ -1,0 +1,71 @@
+72. *Acessando Valores em um Dicionário*
+   - Usando o dicionário criado no exercício anterior, escreva um programa
+    que pergunte ao usuário o nome de um país e exiba a capital correspondente.
+
+73. *Adicionando Itens ao Dicionário*
+   - Adicione mais três pares país-capital 
+   ao dicionário do primeiro exercício e exiba o dicionário atualizado.
+
+74. *Removendo Itens de um Dicionário*
+   - Remova um dos países do dicionário criado e exiba o dicionário atualizado.
+
+75. *Iterando sobre um Dicionário*
+   - Itere sobre o dicionário de países e capitais e exiba cada 
+   par chave-valor no formato "A capital de [país] é [capital]".
+
+76. *Verificação de Chaves em um Dicionário*
+   - Escreva um programa que verifique se um determinado país está presente no dicionário.
+
+77. *Contagem de Itens no Dicionário*
+   - Escreva um programa que conte o número de itens (pares chave-valor) presentes no dicionário.
+
+78. *Aninhando Dicionários*
+   - Crie um dicionário onde cada chave é o nome de uma pessoa 
+   e o valor é outro dicionário com informações como 'idade', 'cidade' e 'profissão'. Exiba o dicionário.
+
+79. *Atualizando Valores em um Dicionário*
+   - Escreva um programa que atualize a capital de um país no dicionário de países e capitais.
+
+80. *Combinação de Dicionários*
+    - Crie dois dicionários e combine-os em um único dicionário. Exiba o dicionário resultante.
+
+81. *Filtrando Valores*
+   - Dado um dicionário de produtos e seus preços, escreva um programa 
+   que filtre e exiba apenas os produtos que custam mais de um determinado valor.
+
+82. *Contagem de Ocorrências*
+   - Escreva um programa que conte a ocorrência de cada palavra em uma 
+   lista de palavras e armazene o resultado em um dicionário.
+
+83. *Invertendo Chaves e Valores*
+   - Dado um dicionário, crie um novo dicionário invertendo as chaves e valores do dicionário original.
+
+84. *Dicionário de Listas*
+   - Crie um dicionário onde cada chave é uma categoria 
+   (por exemplo, frutas, vegetais) e o valor é uma lista de itens pertencentes a essa categoria.
+    Adicione pelo menos três categorias e cinco itens em cada categoria.
+
+85. *Agrupando Dados*
+   - Dada uma lista de tuplas, onde cada tupla contém o nome de uma pessoa e 
+   sua idade, escreva um programa que agrupe essas pessoas por idade em um dicionário.
+
+86. *Mesclando Dicionários*
+   - Dado dois dicionários, mescle-os em um único dicionário. Se houver chaves 
+   duplicadas, some os valores correspondentes.
+
+87. *Transformação de Dados*
+   - Dado um dicionário de alunos e suas notas, escreva um programa que transforme
+    as notas em conceitos (A, B, C, etc.) com base em uma tabela de conversão.
+
+88. *Removendo Itens com Base em Condição*
+   - Dado um dicionário de funcionários e seus salários, escreva um 
+   programa que remova todos os funcionários que ganham abaixo de um certo valor.
+
+89. *Ordenando Dicionário*
+   - Escreva um programa que ordene um dicionário por seus valores
+    (em ordem crescente ou decrescente) e exiba o resultado.
+
+90. *Dicionário de Dicionários*
+   - Crie um dicionário onde cada chave é o nome de um estudante e 
+   o valor é outro dicionário com as matérias e suas respectivas notas. Escreva um programa para calcular
+    a média das notas de cada estudante e exibir o resultado.
