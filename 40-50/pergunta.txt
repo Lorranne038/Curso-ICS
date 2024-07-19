@@ -1,0 +1,36 @@
+Lista de entrada: [-10, 15, -20, 25, 30]
+Função: Retorna uma nova lista onde todos os números negativos foram removidos.
+
+5 - Contagem de Elementos:
+
+Lista de entrada: ["sol", "lua", "sol", "estrela", "lua", "lua"]
+Função: Conta e retorna um dicionário com a contagem de cada elemento.
+
+6 - Maior Número:
+
+Lista de entrada: [5, 3, 9, 1, 10]
+Função: Encontra e retorna o maior número da lista.
+
+7 - Números Ímpares ao Quadrado:
+
+Lista de entrada: [1, 2, 3, 4, 5]
+Função: Retorna uma lista contendo o quadrado dos números ímpares.
+
+8 - Verificar se um Elemento Existe:
+
+Lista de entrada: ["maçã", "banana", "cereja"]
+Elemento e: "banana"
+Função: Retorna True se e estiver na lista, e False caso contrário.
+
+9 - Concatenar Strings:
+
+Lista de entrada: ["Olá", "mundo", "Python", "!"]
+Função: Concatena todos os elementos em uma única string.
+
+Lista de entrada: [1, 2, 3, 4, 5]
+Função: Retorna uma lista com os elementos na ordem inversa.
+
+Função: Retorna uma lista com os elementos na ordem inversa.
+
+Função: Retorna uma lista com os elementos na ordem inversa.
+
