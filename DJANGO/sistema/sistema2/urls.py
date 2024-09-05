@@ -16,14 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import produtos_eletronicos
-from .views import produtos_moveis
-from .views import todos_os_produtos
-
+from .views import servicos_web
+from .views import servicos_marketing
+from .views import todos_os_servicos
 
 urlpatterns = [
-    path('produtos_eletronicos/',produtos_eletronicos),
-    path('produtos_moveis/',produtos_moveis),
-    path('todos_os_produtos/',todos_os_produtos),
+    path('servicos-web/', servicos_web),
+    path('servicos-marketing/', servicos_marketing),
+    path('todos-os-servicos/', todos_os_servicos),
     path('admin/', admin.site.urls),
 ]
