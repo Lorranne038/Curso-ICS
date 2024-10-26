@@ -103,7 +103,7 @@ def ex7(request):
 def ex8(request):
     data = {
         'titulo': 'Exercicio 8. Número somado mais 1.',
-        'descricao_exercicio' : 'Faça um programa que facça a soma de uma numero mais o numero 1.',
+        'descricao_exercicio' : 'Faça um programa que faça a soma de um numero mais o numero 1.',
 
     }
 
