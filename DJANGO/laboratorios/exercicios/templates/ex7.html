@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{titulo}}</h1>
+    <p>{{descricao_exercicio}}</p>
+
+    <form action="{% url 'ex7' %}" method="POST">
+        {% csrf_token  %}
+        <label for="">Numero</label>
+        <input type="text" name="numero" id="numero">
+        <br>
+        <br>
+        <button type="submit">Calcular</button>
+
+    </form>
+    {% if total %}
+        <h2>O total da soma é: {{ total }}</h2>
+    {% endif %}
+
+    <a href="{% url 'home' %}">Voltar para a home</a>  
+</body>
+</html>
