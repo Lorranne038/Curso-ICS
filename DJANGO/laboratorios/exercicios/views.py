@@ -145,7 +145,7 @@ def ex11(request):
     data = {
          
          'titulo':'Exercício 11',
-         'descricao_exercicio':'nnnnn'
+         'descricao_exercicio':' Desenvolva um programa que tenha uma variável do tipo string com uma frase qualquer e, com print, mostre a quantidade de caracteres dessa frase'
      }
 
     if request.method == 'POST':
@@ -158,7 +158,7 @@ def ex11(request):
 def ex12(request):
     data = {
          'titulo':'Exercício 12',
-         'descricao_exercicio':'nnnnn'
+         'descricao_exercicio':' Faça um programa que contenha duas variáveis string, parte1 e parte2, atribua valores a elas, una as duas em uma terceira variável e imprima o resultado'
     }
     if request.method == 'POST':
         parte1 = request.POST.get("parte1") 
@@ -170,7 +170,7 @@ def ex12(request):
 def ex13(request):
     data = {
          'titulo':'Exercício 13',
-         'descricao_exercicio':'nnnnn'
+         'descricao_exercicio':'Crie um programa que tenha uma variável com o ano atual e outra com o ano de nascimento de uma pessoa (use valores fictícios) e imprima a idade dessa pessoa'
     }
     if request.method == 'POST':
         Ano_de_nascimento = request.POST.get("ano_de_nascimento") 
@@ -183,7 +183,7 @@ def ex13(request):
 def ex14(request):
     data = {
          'titulo':'Exercício 14',
-         'descricao_exercicio':'nnnnn'
+         'descricao_exercicio':'Escreva um programa que tenha duas variáveis a e b com valores numéricos, troque os valores entre elas e, em seguida, imprima os novos valores de a e b'
     }
     if request.method == 'POST':
         a = request.POST.get("a")
@@ -195,7 +195,7 @@ def ex14(request):
 def ex15(request):
     data = {
          'titulo':'Exercício 15',
-         'descricao_exercicio':'nnnnn'
+         'descricao_exercicio':' Desenvolva um programa que crie uma variável frase e atribua a ela uma string qualquer. Imprima essa string três vezes seguidas'
     }
     if request.method == 'POST':
         frase = request.POST.get("frase") 
@@ -206,21 +206,21 @@ def ex15(request):
 def ex16(request):
     data = {
          'titulo':'Exercício 16',
-         'descricao_exercicio':'nnnnn'
+         'descricao_exercicio':'Faça um programa que declare quatro variáveis inteiras, realize a média desses valores e imprima o resultado'
     }
     if request.method == 'POST':
-        var1 = request.POST.GET('var1')
-        var2 = request.POST.GET('var2')
-        var3 = request.POST.GET('var3')
-        var4 = request.POST.GET('var4')
+        valor1 = request.POST.get("valor1") 
+        valor2 = request.POST.get("valor2")
+        valor3 = request.POST.get("valor3") 
+        valor4 = request.POST.get("valor4")
+        media = (int(valor1) + int(valor2) + int(valor3) + int(valor4))/4
         data['media'] = media
-        media = (var1 + var2 + var3 + var4) / 4
-        return render(request, 'ex16.html', data)
-    
+    return render (request, 'ex16.html', data)
+
 def ex17(request):
     data = {
          'titulo':'Exercício 17',
-         'descricao_exercicio':'nnnnn'
+         'descricao_exercicio':'Crie um programa que tenha uma variável com uma string representando o nome de uma cor e outra variável com um objeto (por exemplo, "carro"). Imprima uma frase que combine essas informações, como "carro azul"'
     }
     if request.method == 'POST':
         palavra1 = request.POST.get("palavra1") 
@@ -232,7 +232,7 @@ def ex17(request):
 def ex18(request):
     data = {
         'titulo':'Exercício 18',
-         'descricao_exercicio':'nnnnn'
+         'descricao_exercicio':'Escreva um programa que declare duas variáveis com nomes de cidades e use print para exibir uma frase que diga que uma está a leste da outra, por exemplo, "Paris está a leste de Londres'
     }
     if request.method == 'POST':
         palavra1 = request.POST.get("palavra1") 
@@ -244,18 +244,20 @@ def ex18(request):
 def ex19(request):
     data = {
         'titulo':'Exercício 19',
-         'descricao':'nnnnn'
+         'descricao':'Escreva uma função chamada saudacao que aceite um nome como argumento e imprima "Olá, [nome]!"'
     }
-    if request.method.get == 'POST':
-     nome = request.GET.get('nome', '')
-     saudaçao = input("Olá", nome)
-     data['saudaçao'] = saudaçao
-     return render (request, 'ex19.html', data)
+    
+    if request.method =='POST':
+        nome = request.POST.get('nome')
+        saudacao = f'Olá, {nome}!'
+
+        data['saudacao'] = saudacao
+    return render (request, 'ex19.html', data)
 
 def ex20(request):
     data = {
         'titulo':'Exercício 20',
-         'descricao_exercicio':'nnnnn'
+         'descricao_exercicio':'Crie uma função chamada soma que receba dois números como parâmetros e retorne a soma desses dois números'
     }
     if request.method == 'POST':
         valor1 = request.POST.get("valor1") 

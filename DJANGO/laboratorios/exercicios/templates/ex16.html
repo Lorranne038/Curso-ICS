@@ -9,17 +9,18 @@
     <h1>{{titulo}}</h1>
     <p>{{descricao_exercicio}}</p>
     
-    <form method="POST">
-        {% csrf_token %}
-        <br><input type="bumber" name="var1"></br>
-        <br><input type="number" name="var2"></br>
-        <br><input type="number" name="var3"></br>
-        <br><input type="number" name="var4"></br>
-        <br><button type="number">Enviar</button>
-    </form>
+<p>digite quatro numeros para descobrir a media deles</p>
+<form method="POST">
+    {% csrf_token %}
+    <input type="number" name="valor1">
+    <input type="number" name="valor2">
+    <input type="number" name="valor3">
+    <input type="number" name="valor4">
+    <button type="submit">Enviar</button>
+</form>
 
-    {% if media %}
-        <h2>A media dos valores são : {{media}}</h2>
-    {% endif %}
+{% if media %}
+    <h2>a media desses numeros é: {{media}}</h2>
+{% endif %}
 </body>
 </html>
