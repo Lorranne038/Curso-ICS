@@ -23,9 +23,10 @@ urlpatterns = [
     path('ex18/', views.ex18, name='ex18'),
     path('ex19/', views.ex19, name='ex19'),
     path('ex20/', views.ex20, name='ex20'),
-    
-
-
-
+    path('ex21/', views.ex21, name='ex21'),
+    path('ex22/', views.ex22, name='ex22'),
+    path('ex23/', views.ex23, name='ex23'),
+    path('ex24/', views.ex24, name='ex24'),
+    path('ex25/', views.ex25, name='ex25'),
 
 ]

@@ -85,8 +85,6 @@ def ex6(request):
 
     return render (request, 'ex6.html', data)
 
-#ex 7 e 8 está dando erro
-
 def ex7(request):
     data = {
         'titulo': 'Exercicio 7. Número Somado dele mesmo.',
@@ -265,4 +263,69 @@ def ex20(request):
         total = int(valor1) + int(valor2)
         data['total'] = total
     return render(request, 'ex20.html', data)
+
+def ex21(request):
+    data = {
+        'titulo':'Exercício 21',
+         'descricao_exercicio':'Desenvolva uma função conta_caracteres que receba uma string como argumento e retorne o número de caracteres na string. Função para Concatenar Strings'
+    }
+    if request.method == 'POST':
+        palavra = request.POST.get('palavra') 
+        caracteres = len(palavra)
+        data['caracteres'] = caracteres
+         
+    return render(request, 'ex21.html', data)
+
+def ex22(request):
+    data = {
+        'titulo':'Exercicios 22',
+        'descricao_exercicio':' Faça uma função chamada concatena que receba duas strings, parte1 e parte2, como parâmetros, una-as em uma nova string e retorne essa nova string. Função de Cálculo de Idade'
+    }
+    if request.method == 'POST':
+        parte1 = request.POST.get('parte1') 
+        parte2 = request.POST.get('parte2')
+        total = int(parte1) + int(parte2)
+        data['total'] = total
+         
+    return render(request, 'ex22.html', data)
+
+def ex23(request):
+    data = {
+         'titulo':'Exercício 23',
+         'descricao_exercicio':'Escreva uma função chamada calcula_idade que receba o ano atual e o ano de nascimento, e retorne a idade da pessoa.Função de Troca de Valores'
+    }
+    if request.method == 'POST':
+        nascimento = request.POST.get('nascimento') 
+        ano_atual = 2024
+        data_de_nascimento = int(ano_atual) - int(nascimento)
+        data['data_de_nascimento'] = data_de_nascimento
+    return render(request, 'ex23.html', data)
+
+def ex24(request):
+    data = {
+        'titulo':'Exercício 24',
+        'descricao_exercicio':'Crie uma função chamada troca_valores que receba dois valores a e b como parâmetros, troque os valores entre eles e retorne ambos.Função de Repetição de String'
+    }
+    if request.method == 'POST':
+        a = request.POST.get("a")
+        b = request.POST.get("b")
+        troca = a, b = b, a
+        data['troca'] = troca
+    return render(request, 'ex24.html', data)
+
+def ex25(request):
+    data = {
+        'titulo':'Exercício 25',
+        'descricao_exercicio':'Desenvolva uma função chamada repete_string que receba uma string frase e um número inteiro n, e retorne a string repetida n vezes.Função para Calcular Média'
+    }
+    if request.method == 'POST':
+        frase = request.POST.get('frase')
+        string = int(frase) *3
+        data['total'] = string
+    return render(request, 'ex25.html', data)    
+
+
+        
+        
+    
 
