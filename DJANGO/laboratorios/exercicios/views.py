@@ -267,7 +267,7 @@ def ex20(request):
 def ex21(request):
     data = {
         'titulo':'Exercício 21',
-         'descricao_exercicio':'Desenvolva uma função conta_caracteres que receba uma string como argumento e retorne o número de caracteres na string. Função para Concatenar Strings'
+         'descricao_exercicio':'Desenvolva uma função conta_caracteres que receba uma string como argumento e retorne o número de caracteres na string.'
     }
     if request.method == 'POST':
         palavra = request.POST.get('palavra') 
@@ -279,7 +279,7 @@ def ex21(request):
 def ex22(request):
     data = {
         'titulo':'Exercicios 22',
-        'descricao_exercicio':' Faça uma função chamada concatena que receba duas strings, parte1 e parte2, como parâmetros, una-as em uma nova string e retorne essa nova string. Função de Cálculo de Idade'
+        'descricao_exercicio':' Faça uma função chamada concatena que receba duas strings, parte1 e parte2, como parâmetros, una-as em uma nova string e retorne essa nova string.'
     }
     if request.method == 'POST':
         parte1 = request.POST.get('parte1') 
@@ -292,7 +292,7 @@ def ex22(request):
 def ex23(request):
     data = {
          'titulo':'Exercício 23',
-         'descricao_exercicio':'Escreva uma função chamada calcula_idade que receba o ano atual e o ano de nascimento, e retorne a idade da pessoa.Função de Troca de Valores'
+         'descricao_exercicio':'Escreva uma função chamada calcula_idade que receba o ano atual e o ano de nascimento, e retorne a idade da pessoa.'
     }
     if request.method == 'POST':
         nascimento = request.POST.get('nascimento') 
@@ -304,7 +304,7 @@ def ex23(request):
 def ex24(request):
     data = {
         'titulo':'Exercício 24',
-        'descricao_exercicio':'Crie uma função chamada troca_valores que receba dois valores a e b como parâmetros, troque os valores entre eles e retorne ambos.Função de Repetição de String'
+        'descricao_exercicio':'Crie uma função chamada troca_valores que receba dois valores a e b como parâmetros, troque os valores entre eles e retorne ambos.'
     }
     if request.method == 'POST':
         a = request.POST.get("a")
@@ -316,11 +316,11 @@ def ex24(request):
 def ex25(request):
     data = {
         'titulo':'Exercício 25',
-        'descricao_exercicio':'Desenvolva uma função chamada repete_string que receba uma string frase e um número inteiro n, e retorne a string repetida n vezes.Função para Calcular Média'
+        'descricao_exercicio':'Desenvolva uma função chamada repete_string que receba uma string frase e um número inteiro n, e retorne a string repetida n vezes.'
     }
     if request.method == 'POST':
         frase = request.POST.get('frase')
-        string = int(frase) *3
+        string = str(frase) *3
         data['total'] = string
     return render(request, 'ex25.html', data)    
 
