@@ -28,5 +28,9 @@ urlpatterns = [
     path('ex23/', views.ex23, name='ex23'),
     path('ex24/', views.ex24, name='ex24'),
     path('ex25/', views.ex25, name='ex25'),
-
+    path('ex26/', views.ex26, name='ex26'),
+    path('ex27/', views.ex27, name='ex27'),
+    path('ex28/', views.ex28, name='ex28'),
+    path('ex29/', views.ex29, name='ex29'),
+    path('ex30/', views.ex30, name='ex30'),
 ]

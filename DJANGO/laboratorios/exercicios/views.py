@@ -48,9 +48,9 @@ def ex4(request):
 
     }
     if request.method =='POST':
-        valor1 = request.POST.get('valor1')
-        valor2 = request.POST.get('valor2')
-        total = int(valor1) + int(valor2)
+        num1 = request.POST.get('num1')
+        num2 = request.POST.get('num2')
+        total = int(num1) + int(num2)
         
         data['total'] = total
     return render (request, 'ex4.html', data)
@@ -93,7 +93,7 @@ def ex7(request):
     }
     if request.method =='POST':
         numero = request.POST.get('numero')
-        total = (numero) + (numero)
+        total = int(numero) + int(numero)
         
         data['total'] = total
     return render (request, 'ex7.html', data)
@@ -242,7 +242,7 @@ def ex18(request):
 def ex19(request):
     data = {
         'titulo':'Exercício 19',
-         'descricao':'Escreva uma função chamada saudacao que aceite um nome como argumento e imprima "Olá, [nome]!"'
+         'descricao_exercicio':'Escreva uma função chamada saudacao que aceite um nome como argumento e imprima "Olá, [nome]!"'
     }
     
     if request.method =='POST':
@@ -320,12 +320,95 @@ def ex25(request):
     }
     if request.method == 'POST':
         frase = request.POST.get('frase')
-        string = str(frase) *3
-        data['total'] = string
+        string = str(frase) * 3
+        data['string'] = string
     return render(request, 'ex25.html', data)    
 
+def ex26(request):
+    data = {
+        'titulo':'Exercício 26',
+        'descricao_exercicio':'Faça uma função chamada media que receba quatro números como argumentos e retorne a média desses números.'
+    }
+    if request.method == 'POST':
+        valor1 = request.POST.get("valor1") 
+        valor2 = request.POST.get("valor2")
+        valor3 = request.POST.get("valor3") 
+        valor4 = request.POST.get("valor4")
+        media = (int(valor1) + int(valor2) + int(valor3) + int(valor4))/4
+        data['media'] = media
+    return render (request, 'ex16.html', data)
 
+def ex27(request):
+    data = {
+         'titulo':'Exercício 27',
+         'descricao_exercicio':'Crie uma função chamada descreve_cor que receba duas strings, cor e objeto, e retorne uma descrição do tipo "objeto cor"'
+    }
+    if request.method == 'POST':
+        palavra1 = request.POST.get("palavra1") 
+        palavra2 = request.POST.get("palavra2")
+        frase = str(palavra2) + " " + str(palavra1) + " " 
+        data['frase'] = frase
+    return render (request, 'ex27.html', data)
+
+def ex28(request):
+    data = {
+        'titulo':'Exercício 28',
+         'descricao_exercicio':'Escreva uma função chamada posicao_geografica que receba os nomes de duas cidades e retorne uma frase indicando que a primeira cidade está a leste da segunda.'
+    }
+    if request.method == 'POST':
+        palavra1 = request.POST.get("palavra1") 
+        palavra2 = request.POST.get("palavra2")
+        frase = str(palavra2) + " está a leste de " + str(palavra1)
+        data['frase'] = frase
+    return render(request, 'ex28.html', data)
+
+def ex29(request):
+    data = { 
+        'titulo':'Exercício 29 - Calculadora Simples',
+        'descricao_exercicio':'Peça ao usuário que digite dois números e então pergunte qual operação ele deseja realizar (adição, subtração, multiplicação ou divisão). Realize a operação e mostre o resultado.'
+    }
         
-        
+    if request.method == 'POST':
+        num1 = request.POST.get('num1') # input('Digite o primeiro numero: ')
+        num2 = request.POST.get('num2') #input('Digite o segundo numero: ')
+        operaçao = input('Digite qual operação vc deseja: + - * /')
+        data['operaçao'] = operaçao
+
+    if operaçao =="+":
+        soma = int(num1) + int(num2)
+        data['soma'] = (soma)
+
+    elif operaçao =='-':
+        subtracao = int(num1) - int(num2)
+        data['subtracao'] = (subtracao)
+
+    elif operaçao =='*':
+        multiplicacao = int(num1) * int(num2)
+        data['multiplicacao'](multiplicacao)
+
+    elif operaçao == "/":   
+        divisao = int(num1) / int(num2)
+        data['divisao'] = (divisao)
+
+    return render(request, 'ex29.html', data)
+
+def ex30(request):
+    data = { 
+        'titulo':'Exercício 30 - Calculadora Simples',
+        'descricao_exercicio':'Peça ao usuário que digite dois números e então pergunte qual operação ele deseja realizar (adição, subtração, multiplicação ou divisão). Realize a operação e mostre o resultado.'
+    }
+    if request.method == 'POST':
+        num1 = request.POST.get('num1') #num1 = input('Digite o primeiro numero: ')num2 = input('Digite o segundo numero: ')
+        num2 = request.POST.get('num2')
+
+    elif int(num1) > int(num2):
+        data['O primeiro é maior:' + num1] = num1
+
+    elif int(num2) > int(num1):
     
+        data['O segundo numero é o maior:' + num2] = num2
 
+    else:
+        data['Eles são iguais'] = num1 == num2
+
+    return render(request, 'ex30.html', data) 
