@@ -28,3 +28,4 @@ urlpatterns = [
     path('contato/',contato),
     path('admin/', admin.site.urls),
 ]
+
