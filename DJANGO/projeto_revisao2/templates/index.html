@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>{{titulo_pagina}}</h1>
+    <h2>{{subtitulo_pagina}}</h2>
+    <p>Número de visitas:{{visitas}}</p>
+
+    <!--Jinja-->
+    <ul>
+        {% for visitante in lista_visitas %}
+
+            <li>Nome do visitante: {{visitante}}</li>
+
+        {% endfor %}
+
+    </ul>
+        <h4>Lista de clientes do site</h4>
+    <ul>
+        {% for cliente in clientes %}
+        <hr> <!--linha horizontal-->
+       <p>Nome do cliente: {{cliente.nome}} </p>
+       <p>Data do cadastro: {{cliente.cadastro_cadastro}}</p>
+       <p>Saldo: {{cliente.saldo}}</p>
+
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
